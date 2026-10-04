@@ -1,0 +1,18 @@
+experiment:
+  display_name: "Llama 3.1 8B"
+  ollama_digest: "not recorded at experiment time"
+  quantization: "Q4_K_M"
+database:
+  k_retrieval: 2
+  hybrid_alpha: 0.5
+models:
+  llm_name: "llama3.1"
+  llm_temperature: 0
+  reasoning: false
+  embedding_name: "BAAI/bge-base-en-v1.5"
+  device: "cuda"
+  max_retries: 3
+paths:
+  vectorstore: "artifacts/vectorstore"
+  bm25_cache: "artifacts/BM25_CACHE/bm25_index.pkl"
+  raw_dataset: "artifacts/dataset/hotpot_dev_distractor_v1.json"
